@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font */
+@font-face {
+  font-family: font1;
+  src: url(font/Hey\ August.ttf);
+  font-family: font2;
+  src: url(font/GreatVibes-Regular.ttf);
+  font-family: font3;
+  src: url(font/Xtradex.ttf);
+  font-family: font4;
+  src: url(font/Bilbo-Regular.otf);
+}
+/* font */
+
+/* head */
+.head {
+  background-color: rgb(255, 255, 255);
+}
+.allhead {
+  color: rgb(0, 0, 0);
+}
+.subhead {
+  margin-top: -1%;
+  font-family: font1;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.subhead2 {
+  margin-top: -1%;
+  font-family: font4;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.logo {
+  width: 70px;
+}
+.jdlhead {
+  font-family: font1;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+/*  end head */
+
+/* nav */
+.navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  transition: background-color 0.3s;
+  background-color: transparent;
+}
+.navbar.scrolled {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar.scrolled .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* end nav */
+
+/* carausel */
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+}
+/* end carousel */
+
+/* about */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+  .about.scrolled {
+    height: 85vh;
+  }
+  .jdlabout {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .imgabout {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.about {
+  height: 100vh;
+  transition: background-color 0.3s;
+}
+.about.scrolled {
+  background-color: #191919;
+}
+.about.scrolled .jdlabout {
+  color: white;
+}
+.jdlabout {
+  color: rgb(0, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+.imgabout {
+  max-width: 60%;
+  padding-top: 20px;
+  transition: transform 0.3s;
+}
+
+.imgabout:hover {
+  transform: scale(1.2);
+}
+.jdlprofil {
+  font-family: font2;
+  font-size: 25px;
+  padding-top: 10%;
+  font-weight: inherit;
+}
+.about.scrolled .kotakprfil {
+  background-color: black;
+  color: white;
+}
+.card-body {
+  background-color: white;
+}
+.kotakprfil {
+  padding: 20px;
+  padding-top: 0;
+  transition: background-color 0.3s;
+}
+.about.scrolled .shadowprofil {
+  box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.3);
+}
+.shadowprofil {
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.about.scrolled .kotakprfil h3 {
+  color: white;
+}
+.kotakprfil h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.about.scrolled .kotakprfil p {
+  color: white;
+}
+.kotakprfil p {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 14px;
+  font-family: inherit;
+  color: black;
+}
+/* end about */
+
+/* hoby */
+.hobby {
+  height: 70vh;
+  background-color: black;
+}
+.jdlhob {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+@media (max-width: 768px) {
+  .hobby {
+    height: 100vh;
+    padding: 20px;
+  }
+  .hobgame {
+    padding-top: 50px;
+  }
+  @media (max-width: 375px) {
+    .hobby {
+      height: 700px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .hobby {
+    height: 700%;
+  }
+}
+.icon {
+  font-size: 60px;
+}
+.texticon {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 14px;
+  font-family: inherit;
+}
+.jdlicon h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+}
+.button {
+  border: 2px solid #ad0000;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+.button:hover {
+  color: white;
+
+  background-color: #ad0000;
+}
+.cardhob {
+  background-color: black;
+  padding-bottom: 15px;
+}
+.shdhob {
+  box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.3);
+}
+/* modal */
+.modal-content {
+  background-color: #161616bb;
+}
+.modal-dialog {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .modal-dialog {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+  .fotohob {
+    padding: 10px;
+  }
+}
+/* end modal */
+.fotohob {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.fotohob1 {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.fotohob1:hover {
+  transform: scale(1.2);
+}
+.fotohob:hover {
+  transform: scale(1.2);
+}
+
+/* service */
+
+.service {
+  background-color: #191919;
+  height: 63vh;
+}
+.jdlserv {
+  color: rgb(255, 255, 255);
+  font-family: Impacrgb(218, 47, 47) tenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.dua {
+  max-width: 200px;
+  height: 170px;
+  box-shadow: 3px 1px 10px rgba(255, 255, 255, 0.3);
+}
+.satu {
+  max-width: 200px;
+  height: 170px;
+  box-shadow: 3px 1px 10px rgba(255, 255, 255, 0.3);
+}
+.tiga {
+  max-width: 200px;
+  height: 170px;
+  box-shadow: 3px 1px 10px rgba(255, 255, 255, 0.3);
+}
+.imgjdl {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+.imgjdl3 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+@media (max-width: 768px) {
+  .service {
+    height: 110%;
+    padding-bottom: 5%;
+  }
+  .duaa {
+    padding-top: 30px;
+  }
+  .tigaa {
+    padding-top: 30px;
+  }
+}
+/* modal service */
+.sosial a {
+  font-size: 40px;
+  padding: 13px;
+}
+
+.sosial:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* end modal service */
+/* endserv */
+
+/* end */
+.end {
+  height: 50vh;
+  background-color: black;
+}
+.imgend {
+  max-width: 20%;
+}
+.endjdl {
+  letter-spacing: 1px;
+  font-family: font4;
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .imgend {
+    max-width: 60%;
+  }
+  .endjdl {
+    padding-top: 2%;
+  }
+}
